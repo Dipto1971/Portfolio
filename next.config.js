@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true, // Disable default image optimization
   },
   assetPrefix: isProd ? "/dipto1971/portfolio/" : "",
-  basePath: isProd ? "/dipto1971/portfolio" : "",
+  basePath: isProd ? "/dipto1971/portfolio/layout.tsx" : "",
   output: "export",
 };
 
