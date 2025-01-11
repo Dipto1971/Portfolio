@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dipto1971.github.io/portfolio",
+  "homepage": "https://dipto1971.github.io/dipto1971.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
