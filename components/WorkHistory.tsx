@@ -41,7 +41,7 @@ const WorkHistory = () => {
                 ))}
               </div>
             )}
-            {work.options && (
+            {work && (
               <div className="mt-2">
                 {work?.options?.map((option, key) => (
                   <li
