@@ -13,9 +13,7 @@ const Reviews = () => {
       <Heading>Testimonials</Heading>
       <h1 className="text-3xl md:text-5xl font-black capitalize mt-5">
         what{" "}
-        <strong className="text-violet-600 dark:text-zinc-400">
-          people say
-        </strong>
+        <strong className="text-blue-600 dark:text-zinc-400">people say</strong>
       </h1>
       <p className="text-lg font-medium w-full lg:w-6/12 mb-10 mt-5 leading-[22px]">
         I developed products that are more than pretty. I make them shippable
@@ -25,7 +23,7 @@ const Reviews = () => {
         {data.length !== count ? (
           <div className="absolute bottom-0 w-full h-full bg-gradient-to-t from-white/80 dark:from-[#121212]/90 from-[50%] to-transparent flex justify-center items-end z-[9999]">
             <button
-              className="h-[45px] bg-violet-600 text-white rounded-lg font-medium text-base capitalize px-4"
+              className="h-[45px] bg-blue-600 text-white rounded-lg font-medium text-base capitalize px-4"
               onClick={() => setCount(count + 6)}
             >
               show more

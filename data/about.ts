@@ -1,5 +1,9 @@
 const data = {
   heading: "Hello Everyone",
-  bio: "I'm Mahir Faysal Haque Dipto, a Full-stack developer experienced in JavaScript, React, Next, Express, MongoDB, C# and Java. I am a MERN Stack developer contributing in open source projects",
+  bio: `Expertise in C#, WPF, and WinForms, complemented by two years of hands-on experience in MERN stack development.
+  Professional backend developer, specialized in designing secure and scalable systems.
+  Currently, I'm working on WebRTC, focusing on real-time communication technologies for the web.
+  I’m presently learning Go, Statistical Data Analysis.
+  I’m looking to collaborate on WebRTC, NEXT.js projects. Ask me about WebRTC, MERN.`,
 };
 export default data;

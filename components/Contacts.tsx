@@ -2,28 +2,34 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaBehanceSquare } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaRegUserCircle } from "react-icons/fa";
 import Heading from "./Heading";
 import data from "@/data/contacts";
 import SectionWrapper from "./SectionWrapper";
+import { MotionH1, MotionDiv } from "@/lib/motion";
 
 const Contacts = () => {
   return (
     <SectionWrapper>
-      <Heading>contacts</Heading>
-      <div className="flex flex-wrap items-center gap-5">
+      <Heading>Contacts</Heading>
+      <MotionDiv
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1.3, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          delay: 1.2,
+          duration: 0.3,
+        }}
+        className="flex flex-wrap px-1 py-1 items-center gap-2"
+      >
         {data.map((contact) => (
           <Link
             href={contact.link}
             key={contact.id}
             target="_blank"
-            className="flex items-center space-x-2 bg-zinc-100 dark:bg-zinc-800 px-3 py-2 hover:text-black hover:dark:text-white"
+            className="flex items-center bg-zinc-100 dark:bg-slate-900 px-1 py-1 gap-2 hover:text-black hover:dark:text-white"
           >
             {contact.name === "github" && (
               <FaGithub size={18} className="text-black dark:text-white" />
@@ -40,25 +46,10 @@ const Contacts = () => {
                 className="text-[#0a66c2] dark:text-white"
               />
             )}
-            {contact.name === "youtube" && (
-              <FaYoutube size={18} className="text-[#ff0000] dark:text-white" />
-            )}
-            {contact.name === "instagram" && (
-              <FaInstagram
-                size={18}
-                className="text-[#c32aa3] dark:text-white"
-              />
-            )}
             {contact.name === "facebook" && (
               <FaFacebookSquare
                 size={18}
                 className="text-[#1877f2] dark:text-white"
-              />
-            )}
-            {contact.name === "behance" && (
-              <FaBehanceSquare
-                size={18}
-                className="text-[#003ECB] dark:text-white"
               />
             )}
             {contact.name === "email" && (
@@ -70,15 +61,12 @@ const Contacts = () => {
                 className="text-black dark:text-white"
               />
             )}
-            {contact.name === "medium" && (
-              <FaMedium size={18} className="text-black dark:text-white" />
-            )}
             <span className="text-sm md:text-base capitalize text-zinc-700 dark:text-white font-bold">
               {contact.label}
             </span>
           </Link>
         ))}
-      </div>
+      </MotionDiv>
     </SectionWrapper>
   );
 };

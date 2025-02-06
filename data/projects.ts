@@ -13,6 +13,7 @@ const data = [
     ],
     source_code: "https://github.com/Dipto1971/FFMPEG-Video-Processor.git",
     demo: "https://github.com/Dipto1971/FFMPEG-Video-Processor.git",
+    image: "/projects/ffmpeg.png",
   },
   {
     id: 2,
@@ -42,6 +43,7 @@ const data = [
     ],
     source_code: "https://github.com/Dipto1971/Job-Portal",
     demo: "https://github.com/Dipto1971/Job-Portal",
+    image: "/projects/Job-Portal.png",
   },
   {
     id: 4,
@@ -57,6 +59,20 @@ const data = [
     ],
     source_code: "https://github.com/Dipto1971/Bugsy-The-Issue-Tracker",
     demo: "http://www.demo.com/mydemo",
+  },
+  {
+    id: 5,
+    title: "Simple Todo Appplcation",
+    description:
+      "The primary goal of this project is to gain a thorough understanding of building a scalable and secure web application using the MERN stack. It is designed to explore best practices for building real-world applications, including setting up secure authentication, managing data flow efficiently, and enforcing strict type-checking with TypeScript. This application serves as a learning platform for integrating advanced tools and libraries that enhance both developer experience and application performance.",
+    skills: [
+      { id: 1, name: "react", image: "/skills/react.png" },
+      { id: 2, name: "redux", image: "/skills/redux.png" },
+      { id: 3, name: "Typescript", image: "/skills/Typescript.png" },
+      { id: 4, name: "mongodb", image: "/skills/mongodb.png" },
+    ],
+    source_code: "",
+    demo: "",
   },
 ];
 export default data;

@@ -13,7 +13,20 @@ const Model = ({ state, details, toggleModel }) => {
       />
       <div className="max-w-screen-xl w-full bg-white dark:bg-zinc-900 p-6 rounded-lg border border-zinc-100 dark:border-zinc-700 max-h-[80vh] overflow-x-auto">
         <div className="flex flex-wrap lg:space-x-6">
-          <div className="relative w-full lg:w-[400px]  rounded-lg overflow-hidden"></div>
+          <div className="relative w-full lg:w-[400px]  rounded-lg overflow-hidden">
+            <div className="pt-[56.25%]">
+              <Image
+                alt={details.title}
+                src={
+                  details.image && details.image !== "/work/No-pic.png"
+                    ? details.image
+                    : "/work/No-pic.png"
+                }
+                fill
+                className="w-full h-full absolute inset-0"
+              />
+            </div>
+          </div>
           <div className="flex-1 mt-5 lg:mt-0">
             <h2 className="text-xl md:text-2xl text-zinc-700 dark:text-zinc-400 font-bold">
               {details.title}
