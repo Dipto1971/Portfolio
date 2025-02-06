@@ -1,4 +1,20 @@
-const data = [
+interface work {
+  id: number;
+  role: string;
+  company: string;
+  type: string;
+  date: string;
+  image: string;
+  skills?: skills[]; // Existing optional skills array
+  options?: string[]; // Add this optional options array
+}
+interface skills {
+  id: number;
+  name: string;
+  image: string;
+}
+
+const data: work[] = [
   {
     id: 1,
     image: "/work/EWU.png",
