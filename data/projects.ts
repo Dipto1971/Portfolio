@@ -1,3 +1,5 @@
+import { image } from "framer-motion/client";
+
 const data = [
   {
     id: 1,
@@ -47,6 +49,19 @@ const data = [
   },
   {
     id: 4,
+    title: "JSON Voyager",
+    description:
+      "Developed a React application that allows users to visualize and interact with JSON data in a tree structure. Implemented custom features like search, expand/collapse, and data filtering to enhance the user experience. Integrated TypeScript for strict type-checking and improved code quality. ",
+    skills: [
+      { id: 1, name: "react", image: "/skills/react.png" },
+      { id: 2, name: "typescript", image: "/skills/typescript.png" },
+    ],
+    source_code: "https://github.com/Dipto1971/JSON-Voyager",
+    demo: "https://json-voyager-mqtx-ghixzt8ph-diptos-projects-6f0bce34.vercel.app/",
+    image: "/projects/JSON-Voyager.png",
+  },
+  {
+    id: 5,
     title:
       "Issue Tracking System with NEXTjs, Prisma, TypeScript and TailwindCSS",
     description:
@@ -61,7 +76,7 @@ const data = [
     demo: "http://www.demo.com/mydemo",
   },
   {
-    id: 5,
+    id: 6,
     title: "Simple Todo Appplcation",
     description:
       "The primary goal of this project is to gain a thorough understanding of building a scalable and secure web application using the MERN stack. It is designed to explore best practices for building real-world applications, including setting up secure authentication, managing data flow efficiently, and enforcing strict type-checking with TypeScript. This application serves as a learning platform for integrating advanced tools and libraries that enhance both developer experience and application performance.",
